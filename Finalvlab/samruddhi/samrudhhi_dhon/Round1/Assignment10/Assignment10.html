@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matrix Operations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Matrix Operations</h1>
+        <div>
+            <h3>Matrix Addition:</h3>
+            <div class="form-group">
+                <label for="matrix1">Enter Matrix 1:</label>
+                <textarea id="matrix1" class="form-control" rows="3" placeholder="e.g. 1 2 3\n4 5 6\n7 8 9"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="matrix2">Enter Matrix 2:</label>
+                <textarea id="matrix2" class="form-control" rows="3" placeholder="e.g. 9 8 7\n6 5 4\n3 2 1"></textarea>
+            </div>
+            <button class="btn btn-primary" onclick="performMatrixAddition()">Add Matrices</button>
+            <p id="additionResult"></p>
+        </div>
+        <div class="mt-5">
+            <h3>Matrix Transpose:</h3>
+            <div class="form-group">
+                <label for="matrixTranspose">Enter Matrix:</label>
+                <textarea id="matrixTranspose" class="form-control" rows="3" placeholder="e.g. 1 2 3\n4 5 6\n7 8 9"></textarea>
+            </div>
+            <button class="btn btn-primary" onclick="findMatrixTranspose()">Find Transpose</button>
+            <p id="transposeResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
